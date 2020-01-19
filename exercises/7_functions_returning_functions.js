@@ -7,8 +7,7 @@ parameter passed to createGetFunction when it was called.
 */
 function createGetFunction(elementToReturn) {
   // PLACE YOUR CODE BELOW
-
-
+  return (array) => array[elementToReturn - 1]
   // PLACE YOUR CODE ABOVE
 }
 
@@ -30,4 +29,3 @@ when you run "node 7_functions_returning_functions.js":
 Success
 The second element is tigers
 */
-

@@ -13,6 +13,18 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+  let mix, colors = [
+    (typeof color1 == "string") ? color1.toLowerCase() : 'InputError',
+    (typeof color2 == "string") ? color2.toLowerCase() : 'InputError'
+  ]
+
+  if (colors.includes('blue') && colors.includes('red')) mix = 'purple'
+  else if (colors.includes('green') && colors.includes('red')) mix = 'brown'
+  else if (colors.includes('blue') && colors.includes('yellow')) mix = 'green'
+  else if (colors.includes('red') && colors.includes('yellow')) mix = 'orange'
+
+
+  return mix || 'unknown'
   // PLACE YOUR CODE ABOVE
 }
 
